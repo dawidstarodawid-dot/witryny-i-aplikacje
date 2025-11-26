@@ -31,18 +31,15 @@
                            </TD> 
 <style>
 .vertical-line {
-    border-left: 2px solid black; /* grubość i kolor linii */
-    height: 100px;               /* wysokość linii */
-    margin: 0 10px;               /* odstęp od innych elementów */
+    position: absolute;
+    left: 50%;               /* pozycja w poziomie */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: red;
 }
 </style>
-<body>
 
-<p>Tekst po lewej</p>
-<div class="vertical-line"></div>
-<p>Tekst po prawej</p>
-
-</body>
        <TD width="500">&nbsp&nbsp&nbsp&nbspKlasa<br>
   &nbsp 8* &nbsp1&nbsp&nbsp&nbsp A&nbsp&nbsp&nbspB  <br> 
  <input type="checkbox" name="ciastko" value="8*">  <input type="checkbox" name="ciastko" value="1"> <input type="checkbox" name="ciastko" value=""> <input type="checkbox" name="ciastko" value="1">
@@ -109,6 +106,7 @@ niespodzianka</button></TD>
     </body> 
 
 </html> 
+
 
 
 
