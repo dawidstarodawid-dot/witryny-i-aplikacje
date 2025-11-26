@@ -29,21 +29,25 @@
             
                                
                            </TD> 
-            <style>
+<style>
 .vertical-line {
-    position: absolute;
-    left: 50%;               
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background-color: red;
+    border-left: 2px solid black; /* grubość i kolor linii */
+    height: 100px;               /* wysokość linii */
+    margin: 0 10px;               /* odstęp od innych elementów */
 }
 </style>
+<body>
+
+<p>Tekst po lewej</p>
+<div class="vertical-line"></div>
+<p>Tekst po prawej</p>
+
+</body>
        <TD width="500">&nbsp&nbsp&nbsp&nbspKlasa<br>
   &nbsp 8* &nbsp1&nbsp&nbsp&nbsp A&nbsp&nbsp&nbspB  <br> 
  <input type="checkbox" name="ciastko" value="8*">  <input type="checkbox" name="ciastko" value="1"> <input type="checkbox" name="ciastko" value=""> <input type="checkbox" name="ciastko" value="1">
  <br>&nbsp 2 &nbsp&nbsp 3&nbsp&nbsp&nbspC&nbsp&nbsp&nbsp D   <br>
- <input type="checkbox" name="ciastko" value="8*">  <input type="checkbox" name="ciastko" value="1"> <input type="checkbox" name="ciastko" value=""> <input type="checkbox" name="ciastko" value="1">
+ <input type="checkbox" name="ciastko" value="8*">  <input type="checkbox" name="ciastko" value="1"> <div class="vertical-line"></div> <input type="checkbox" name="ciastko" value=""> <input type="checkbox" name="ciastko" value="1">
  <br>&nbsp 4 &nbsp&nbsp 5&nbsp&nbsp&nbsp&nbspE&nbsp&nbsp&nbsp F   <br>
  <input type="checkbox" name="ciastko" value="8*">  <input type="checkbox" name="ciastko" value="1"> <input type="checkbox" name="ciastko" value=""> <input type="checkbox" name="ciastko" value="1">
  <br>8*-szkoły podstawowej
@@ -105,6 +109,7 @@ niespodzianka</button></TD>
     </body> 
 
 </html> 
+
 
 
 
