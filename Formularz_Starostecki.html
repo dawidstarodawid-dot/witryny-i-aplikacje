@@ -130,17 +130,15 @@ niespodzianka</button></TD>
 
 
 
-
 <!DOCTYPE html>
 <html lang="pl-PL">
 <head>
 <meta charset="utf-8">
-<title>Formularz 1:1</title>
+<title>Formularz</title>
 <style>
-table{border-collapse:collapse;margin:auto;width:900px;}
+table{border-collapse:collapse;margin:auto;width:700px;}
 td{border:1px solid #000;padding:10px;vertical-align:top;}
-.left{width:50%;}
-.right{width:50%;}
+.half{width:50%;}
 </style>
 </head>
 <body>
@@ -149,33 +147,34 @@ td{border:1px solid #000;padding:10px;vertical-align:top;}
 
 <table>
 <tr>
-<td class="left"><b>Imię</b><br><input type="text" style="width:90%;"></td>
-<td class="right"><b>Nazwisko</b><br><input type="text" style="width:90%;"></td>
+<td class="half"><b>Imię</b><br><input type="text" style="width:90%;"></td>
+<td class="half"><b>Nazwisko</b><br><input type="text" style="width:90%;"></td>
 </tr>
 
 
 <tr>
 <td colspan="2">
-<b>Klasa:</b><br><br>
+<b>Klasa</b><br><br>
 8* – szkoły podstawowej<br><br>
 <table style="width:100%; border-collapse:collapse;">
 <tr>
-<td style="border:0; width:25%; text-align:right; padding-right:10px;">
+<td style="border:0; width:25%; text-align:center;">
 1 <input type="checkbox"><br>
 2 <input type="checkbox"><br>
 3 <input type="checkbox"><br>
 </td>
-<td style="border:0; width:25%; text-align:right; padding-right:10px;">
+<td style="border:0; width:25%; text-align:center;">
 4 <input type="checkbox"><br>
 5 <input type="checkbox"><br>
 6 <input type="checkbox"><br>
 </td>
-<td style="border-left:2px solid black; width:25%; padding-left:10px;">
+<td style="border-left:2px solid black; width:5%;"></td>
+<td style="border:0; width:22%; text-align:center;">
 A <input type="checkbox"><br>
 B <input type="checkbox"><br>
 C <input type="checkbox"><br>
 </td>
-<td style="border:0; width:25%; padding-left:10px;">
+<td style="border:0; width:23%; text-align:center;">
 D <input type="checkbox"><br>
 E <input type="checkbox"><br>
 F <input type="checkbox"><br>
@@ -184,63 +183,11 @@ F <input type="checkbox"><br>
 </table>
 </td>
 </tr>
-
-
-<tr>
-<td class="left">
-<b>Do jakiej szkoły uczęszczasz?</b><br>
-<select style="width:90%;">
-<option>Podstawowej</option>
-<option>Liceum</option>
-<option>Szkoła branżowa</option>
-<option>Technikum</option>
-<option>Wyższa</option>
-<option>Nie uczęszczam</option>
-</select>
-</td>
-<td class="right">
-<b>Czy umiesz programować?</b><br>
-<input type="radio"> Tak<br>
-<input type="radio"> Nie<br>
-<input type="radio"> Nie wiem
-</td>
-</tr>
-
-
-<tr>
-<td class="left">
-<b>Opinia o pogodzie:</b><br>
-<textarea rows="5" style="width:90%;"></textarea>
-</td>
-<td class="right">
-<b>Dodatkowe dane:</b><br>
-Czas: <input type="time"><br>
-Data: <input type="date"><br>
-Kolor: <input type="color"><br>
-Wilgotność: <input type="range"><br>
-Postęp: <progress></progress>
-</td>
-</tr>
-
-
-<tr>
-<td class="left" style="text-align:center;">
-<button style="width:150px; height:50px;">RESET</button>
-</td>
-<td class="right" style="text-align:center;">
-<button style="width:150px; height:50px;">WYŚLIJ</button>
-</td>
-</tr>
 </table>
 
 
 </body>
 </html>
-
-
-
-
-
 
 
 
