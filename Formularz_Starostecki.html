@@ -132,59 +132,50 @@ niespodzianka</button></TD>
 
 
 
-
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl-PL">
 <head>
-<meta charset="UTF-8" />
-<title>Zapisy do Klubu Muzycznego</title>
+<meta charset="utf-8">
+<title>Formularz Starostecki</title>
 <style>
-body { font-family: Arial, sans-serif; margin: 20px; }
-.section { margin-bottom: 20px; }
-label { display: block; margin-top: 8px; }
-input[type=text], select, textarea { width: 300px; padding: 6px; }
-textarea { height: 120px; width: 400px; }
-.row { display: flex; gap: 40px; }
-.class-grid { display: grid; grid-template-columns: repeat(2, 40px); gap: 6px; }
-.buttons { margin-top: 20px; }
+table{border-collapse:collapse;width:900px;margin:auto;}
+td{border:1px solid #000;padding:10px;vertical-align:top;}
+.half{width:50%;}
 </style>
 </head>
-<body>
-<h1>Zapisy do klubu muzycznego</h1>
+<body bgcolor="#8BF00FF">
+<center><h1>ZAPISY DO KLUBU<br>MUZYCZNEGO</h1></center>
 
 
-<div class="section">
-<label>Imię: <input type="text" /></label>
-<label>Nazwisko: <input type="text" /></label>
-</div>
+<table>
+<tr>
+<td class="half"><b>Imię:</b><br><input name="imie" size="25"></td>
+<td class="half"><b>Nazwisko:</b><br><input name="nazwisko" size="25"></td>
+</tr>
 
 
-<div class="section">
-<h3>Klasa</h3>
-<div class="row">
-<div>
-<p>Szkoła podstawowa</p>
-<div class="class-grid">
-<label>1 <input type="checkbox"></label>
-<label>A <input type="checkbox"></label>
-<label>2 <input type="checkbox"></label>
-<label>B <input type="checkbox"></label>
-<label>3 <input type="checkbox"></label>
-<label>C <input type="checkbox"></label>
-<label>4 <input type="checkbox"></label>
-<label>D <input type="checkbox"></label>
-<label>5 <input type="checkbox"></label>
-<label>E <input type="checkbox"></label>
-<label>6 <input type="checkbox"></label>
-<label>F <input type="checkbox"></label>
-</div>
-</div>
-</div>
-</div>
+<tr>
+<td class="half">
+<b>Klasa (numery):</b><br>
+1 <input type="checkbox"> 2 <input type="checkbox"><br>
+3 <input type="checkbox"> 4 <input type="checkbox"><br>
+5 <input type="checkbox"> 6 <input type="checkbox"><br>
+8* szkoły podstawowej
+</td>
 
 
-<div class="section">
-<label>Do jakiej szkoły uczęszczasz?
+<td class="half">
+<b>Klasa (litery):</b><br>
+A <input type="checkbox"> B <input type="checkbox"><br>
+C <input type="checkbox"> D <input type="checkbox"><br>
+E <input type="checkbox"> F <input type="checkbox"><br>
+</td>
+</tr>
+
+
+<tr>
+<td class="half">
+<b>Do jakiej szkoły uczęszczasz?</b><br>
 <select>
 <option>Podstawowej</option>
 <option>Liceum</option>
@@ -193,48 +184,45 @@ textarea { height: 120px; width: 400px; }
 <option>Wyższa</option>
 <option>Nie uczęszczam</option>
 </select>
-</label>
-</div>
+</td>
+<td class="half">
+<b>Czy umiesz programować?</b><br>
+<input type="radio" name="pyt3"> Tak<br>
+<input type="radio" name="pyt3"> Nie<br>
+<input type="radio" name="pyt3"> Nie wiem<br>
+</td>
+</tr>
 
 
-<div class="section">
-<h3>Czy umiesz grać na jakimś instrumencie?</h3>
-<label><input type="range" min="0" max="1"> Nie / Tak</label>
-</div>
+<tr>
+<td class="half">
+<b>Opinia o pogodzie:</b><br>
+<textarea cols="40" rows="4"></textarea>
+</td>
+<td class="half">
+<b>Dodatkowe dane:</b><br>
+Czas: <input type="time"><br>
+Data: <input type="date"><br>
+Kolor: <input type="color"><br>
+</td>
+</tr>
 
 
-<div class="section">
-<label>Jeśli tak, to na jakim?
-<input type="text">
-</label>
-</div>
-
-
-<div class="section">
-<h3>Ulubiony typ muzyki</h3>
-<label><input type="radio" name="typ"> Muzyka ludowa</label>
-<label><input type="radio" name="typ"> Muzyka poważna</label>
-<label><input type="radio" name="typ"> Muzyka rozrywkowa</label>
-</div>
-
-
-<div class="section">
-<h3>Jeśli wolisz śpiewać to na czym ci zależy?</h3>
-<label><input type="radio" name="spiew"> O samemu</label>
-<label><input type="radio" name="spiew"> O w grupie</label>
-<label><input type="radio" name="spiew"> Obojętnie mi</label>
-<label><input type="radio" name="spiew"> Wole śpiewać</label>
-</div>
-
-
-<div class="section">
-<h3>Dlaczego chciałbyś/chciałabyś dołączyć do klubu muzycznego?</h3>
-<textarea></textarea>
-</div>
-
-
+<tr>
+<td class="half">
+<b>Wilgotność:</b><br>
+<input type="range"><br>
+<br>Proszę czekać... <progress></progress>
+</td>
+<td class="half">
+<button style="width:200px;height:60px">Przycisk niespodzianka</button><br><br>
+<input type="reset" value="Reset" style="width:150px;height:50px"> &nbsp;
+<input type="submit" value="Wyślij" style="width:150px;height:50px">
+</td>
+</tr>
+</table>
+</body>
 </html>
-
 
 
 
