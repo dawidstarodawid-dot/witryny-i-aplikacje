@@ -118,6 +118,107 @@ niespodzianka</button></TD>
 
 
 
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<title>Zapisy do Klubu Muzycznego</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 20px; }
+.section { margin-bottom: 20px; }
+label { display: block; margin-top: 8px; }
+input[type=text], select, textarea { width: 300px; padding: 6px; }
+textarea { height: 120px; width: 400px; }
+.row { display: flex; gap: 40px; }
+.class-grid { display: grid; grid-template-columns: repeat(2, 40px); gap: 6px; }
+.buttons { margin-top: 20px; }
+</style>
+</head>
+<body>
+<h1>Zapisy do klubu muzycznego</h1>
+
+
+<div class="section">
+<label>Imię: <input type="text" /></label>
+<label>Nazwisko: <input type="text" /></label>
+</div>
+
+
+<div class="section">
+<h3>Klasa</h3>
+<div class="row">
+<div>
+<p>Szkoła podstawowa</p>
+<div class="class-grid">
+<label>1 <input type="checkbox"></label>
+<label>A <input type="checkbox"></label>
+<label>2 <input type="checkbox"></label>
+<label>B <input type="checkbox"></label>
+<label>3 <input type="checkbox"></label>
+<label>C <input type="checkbox"></label>
+<label>4 <input type="checkbox"></label>
+<label>D <input type="checkbox"></label>
+<label>5 <input type="checkbox"></label>
+<label>E <input type="checkbox"></label>
+<label>6 <input type="checkbox"></label>
+<label>F <input type="checkbox"></label>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="section">
+<label>Do jakiej szkoły uczęszczasz?
+<select>
+<option>Podstawowej</option>
+<option>Liceum</option>
+<option>Szkoła branżowa</option>
+<option>Technikum</option>
+<option>Wyższa</option>
+<option>Nie uczęszczam</option>
+</select>
+</label>
+</div>
+
+
+<div class="section">
+<h3>Czy umiesz grać na jakimś instrumencie?</h3>
+<label><input type="range" min="0" max="1"> Nie / Tak</label>
+</div>
+
+
+<div class="section">
+<label>Jeśli tak, to na jakim?
+<input type="text">
+</label>
+</div>
+
+
+<div class="section">
+<h3>Ulubiony typ muzyki</h3>
+<label><input type="radio" name="typ"> Muzyka ludowa</label>
+<label><input type="radio" name="typ"> Muzyka poważna</label>
+<label><input type="radio" name="typ"> Muzyka rozrywkowa</label>
+</div>
+
+
+<div class="section">
+<h3>Jeśli wolisz śpiewać to na czym ci zależy?</h3>
+<label><input type="radio" name="spiew"> O samemu</label>
+<label><input type="radio" name="spiew"> O w grupie</label>
+<label><input type="radio" name="spiew"> Obojętnie mi</label>
+<label><input type="radio" name="spiew"> Wole śpiewać</label>
+</div>
+
+
+<div class="section">
+<h3>Dlaczego chciałbyś/chciałabyś dołączyć do klubu muzycznego?</h3>
+<textarea></textarea>
+</div>
+
+
+</html>
 
 
 
