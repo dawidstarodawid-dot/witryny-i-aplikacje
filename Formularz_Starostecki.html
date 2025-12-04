@@ -136,45 +136,47 @@ niespodzianka</button></TD>
 <html lang="pl-PL">
 <head>
 <meta charset="utf-8">
-<title>Formularz Starostecki</title>
+<title>Zapisy do klubu muzycznego</title>
 <style>
-table{border-collapse:collapse;width:900px;margin:auto;}
+table{border-collapse:collapse;margin:auto;width:1100px;}
 td{border:1px solid #000;padding:10px;vertical-align:top;}
 .half{width:50%;}
+.center{text-align:center;}
+input[type=text], select, textarea{width:90%;}
 </style>
 </head>
-<body bgcolor="#8BF00FF">
+<body>
 <center><h1>ZAPISY DO KLUBU<br>MUZYCZNEGO</h1></center>
 
 
 <table>
 <tr>
-<td class="half"><b>Imię:</b><br><input name="imie" size="25"></td>
-<td class="half"><b>Nazwisko:</b><br><input name="nazwisko" size="25"></td>
+<td class="half"><b>Imię</b><br><input type="text"></td>
+<td class="half"><b>Nazwisko</b><br><input type="text"></td>
 </tr>
 
 
 <tr>
-<td class="half">
-<b>Klasa (numery):</b><br>
-1 <input type="checkbox"> 2 <input type="checkbox"><br>
-3 <input type="checkbox"> 4 <input type="checkbox"><br>
-5 <input type="checkbox"> 6 <input type="checkbox"><br>
-8* szkoły podstawowej
+<td>
+<b>Klasa (numery):</b><br><br>
+1 <input type="checkbox"> &nbsp; 2 <input type="checkbox"><br>
+3 <input type="checkbox"> &nbsp; 4 <input type="checkbox"><br>
+5 <input type="checkbox"> &nbsp; 6 <input type="checkbox"><br><br>
+8* – szkoły podstawowej
 </td>
 
 
-<td class="half">
-<b>Klasa (litery):</b><br>
-A <input type="checkbox"> B <input type="checkbox"><br>
-C <input type="checkbox"> D <input type="checkbox"><br>
-E <input type="checkbox"> F <input type="checkbox"><br>
+<td style="border-left:2px solid black;">
+<b>Klasa (litery):</b><br><br>
+A <input type="checkbox"> &nbsp; B <input type="checkbox"><br>
+C <input type="checkbox"> &nbsp; D <input type="checkbox"><br>
+E <input type="checkbox"> &nbsp; F <input type="checkbox"><br>
 </td>
 </tr>
 
 
 <tr>
-<td class="half">
+<td>
 <b>Do jakiej szkoły uczęszczasz?</b><br>
 <select>
 <option>Podstawowej</option>
@@ -185,46 +187,64 @@ E <input type="checkbox"> F <input type="checkbox"><br>
 <option>Nie uczęszczam</option>
 </select>
 </td>
-<td class="half">
-<b>Czy umiesz programować?</b><br>
-<input type="radio" name="pyt3"> Tak<br>
-<input type="radio" name="pyt3"> Nie<br>
-<input type="radio" name="pyt3"> Nie wiem<br>
+<td>
+<b>Jeśli tak to na jakim?</b><br>
+<input type="text">
 </td>
 </tr>
 
 
 <tr>
-<td class="half">
-<b>Opinia o pogodzie:</b><br>
-<textarea cols="40" rows="4"></textarea>
+<td>
+<b>Czy umiesz grać na jakimś instrumencie?</b><br><br>
+Nie <input type="range"> Tak
 </td>
-<td class="half">
-<b>Dodatkowe dane:</b><br>
-Czas: <input type="time"><br>
-Data: <input type="date"><br>
-Kolor: <input type="color"><br>
+<td>
+<b>Jeśli nie – chciałbyś/chciałabyś nauczyć się grać?</b><br>
+<input type="text">
 </td>
 </tr>
 
 
 <tr>
-<td class="half">
-<b>Wilgotność:</b><br>
-<input type="range"><br>
-<br>Proszę czekać... <progress></progress>
+<td>
+<b>Ulubiony typ muzyki:</b><br>
+1. ludowa<br>
+2. poważna<br>
+3. rozrywkowa<br><br>
+<button>Opcja 1</button> <button>Opcja 2</button> <button>Opcja 3</button>
 </td>
-<td class="half">
-<button style="width:200px;height:60px">Przycisk niespodzianka</button><br><br>
-<input type="reset" value="Reset" style="width:150px;height:50px"> &nbsp;
-<input type="submit" value="Wyślij" style="width:150px;height:50px">
+
+
+<td>
+<b>Wolałbyś/wolałabyś grać samemu czy w grupie?</b><br>
+<input type="radio" name="g"> Samemu<br>
+<input type="radio" name="g"> W grupie<br>
+<input type="radio" name="g"> Obojętnie mi<br>
+<input type="radio" name="g"> Wolę śpiewać<br>
+</td>
+</tr>
+
+
+<tr>
+<td colspan="2">
+<b>Dlaczego chciałbyś/chciałabyś dołączyć do klubu muzycznego?</b><br><br>
+<textarea rows="5"></textarea>
+</td>
+</tr>
+
+
+<tr class="center">
+<td colspan="2">
+<button style="width:150px;height:50px;">RESET</button>
+<button style="width:150px;height:50px;">WYŚLIJ</button>
 </td>
 </tr>
 </table>
+
+
 </body>
 </html>
-
-
 
 
 
