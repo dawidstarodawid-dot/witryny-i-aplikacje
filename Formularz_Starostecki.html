@@ -135,33 +135,32 @@ niespodzianka</button></TD>
 <html lang="pl-PL">
 <head>
 <meta charset="utf-8">
-<title>Zapisy do klubu muzycznego</title>
+<title>Formularz 1:1</title>
 <style>
-table{border-collapse:collapse;margin:auto;width:1100px;}
+table{border-collapse:collapse;margin:auto;width:900px;}
 td{border:1px solid #000;padding:10px;vertical-align:top;}
-.half{width:50%;}
-.center{text-align:center;}
-input[type=text], select, textarea{width:90%;}
+.left{width:50%;}
+.right{width:50%;}
 </style>
 </head>
 <body>
-<center><h1>ZAPISY DO KLUBU<br>MUZYCZNEGO</h1></center>
+<center><h1>ZAPISY DO KLUBU MUZYCZNEGO</h1></center>
 
 
 <table>
 <tr>
-<td class="half"><b>Imię</b><br><input type="text"></td>
-<td class="half"><b>Nazwisko</b><br><input type="text"></td>
+<td class="left"><b>Imię</b><br><input type="text" style="width:90%;"></td>
+<td class="right"><b>Nazwisko</b><br><input type="text" style="width:90%;"></td>
 </tr>
 
 
 <tr>
-<td style="width:50%;">
+<td colspan="2">
 <b>Klasa:</b><br><br>
-&nbsp;8* – szkoły podstawowej<br><br>
-<table style="border-collapse:collapse; width:100%;">
+8* – szkoły podstawowej<br><br>
+<table style="width:100%; border-collapse:collapse;">
 <tr>
-<td style="border:0; width:45%; text-align:right; padding-right:10px;">
+<td style="border:0; width:40%; text-align:right; padding-right:10px;">
 1 <input type="checkbox"><br>
 2 <input type="checkbox"><br>
 3 <input type="checkbox"><br>
@@ -169,8 +168,8 @@ input[type=text], select, textarea{width:90%;}
 5 <input type="checkbox"><br>
 6 <input type="checkbox"><br>
 </td>
-<td style="border-left:2px solid black; width:10%;"></td>
-<td style="border:0; width:45%; padding-left:10px;">
+<td style="border-left:2px solid black; width:5%;"></td>
+<td style="border:0; width:40%; padding-left:10px;">
 A <input type="checkbox"><br>
 B <input type="checkbox"><br>
 C <input type="checkbox"><br>
@@ -185,9 +184,9 @@ F <input type="checkbox"><br>
 
 
 <tr>
-<td>
+<td class="left">
 <b>Do jakiej szkoły uczęszczasz?</b><br>
-<select>
+<select style="width:90%;">
 <option>Podstawowej</option>
 <option>Liceum</option>
 <option>Szkoła branżowa</option>
@@ -196,43 +195,45 @@ F <input type="checkbox"><br>
 <option>Nie uczęszczam</option>
 </select>
 </td>
-<td>
-<b>Jeśli tak to na jakim?</b><br>
-<input type="text">
+<td class="right">
+<b>Czy umiesz programować?</b><br>
+<input type="radio"> Tak<br>
+<input type="radio"> Nie<br>
+<input type="radio"> Nie wiem
 </td>
 </tr>
 
 
 <tr>
-<td>
-<b>Czy umiesz grać na jakimś instrumencie?</b><br><br>
-Nie <input type="range"> Tak
+<td class="left">
+<b>Opinia o pogodzie:</b><br>
+<textarea rows="5" style="width:90%;"></textarea>
 </td>
-<td>
-<b>Jeśli nie – chciałbyś/chciałabyś nauczyć się grać?</b><br>
-<input type="text">
+<td class="right">
+<b>Dodatkowe dane:</b><br>
+Czas: <input type="time"><br>
+Data: <input type="date"><br>
+Kolor: <input type="color"><br>
+Wilgotność: <input type="range"><br>
+Postęp: <progress></progress>
 </td>
 </tr>
 
 
 <tr>
-<td>
-<b>Ulubiony typ muzyki:</b><br>
-1. ludowa<br>
-2. poważna<br>
-3. rozrywkowa<br><br>
-<button>Opcja 1</button> <button>Opcja 2</button> <button>Opcja 3</button>
+<td class="left" style="text-align:center;">
+<button style="width:150px; height:50px;">RESET</button>
 </td>
+<td class="right" style="text-align:center;">
+<button style="width:150px; height:50px;">WYŚLIJ</button>
+</td>
+</tr>
+</table>
 
 
-<td>
-<b>Wolałbyś/wolałabyś grać samemu czy w grupie?</b><br>
-<input type="radio" name="g"> Samemu<br>
-<input type="radio" name="g"> W grupie<br>
-<input type="radio" name="g"> Obojętnie mi<br>
-<input type="radio" name="g"> Wolę śpiewać<br>
-</td>
+</body>
 </html>
+
 
 
 
